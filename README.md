@@ -72,18 +72,20 @@ For each pilot site a number of hashtags or keywords are set such as #ParcoDora,
 
 The formula to calculate the reputation score for a WeGovNow user is
 
-	(weight * number of WeGovNow OnToMap main events) + (weightA * a + weightB * b + ... + weightX * x)
+```
+(weight * number of WeGovNow OnToMap main events) + (weightA * a + weightB * b + ... + weightX * x)
+```
 
 where:
 
-a) followers/friends ratio
-b) number of tweets
-c) has location (1 yes, 0 no)
-d) has existing location (1 yes, 0 no)
-e) tweet ratio (tweets per day posted by user profile)
-f) account age
-g) is verified (1 yes, 0 no)
-h) number of retweets
+a) followers/friends ratio  
+b) number of tweets  
+c) has location (1 yes, 0 no)  
+d) has existing location (1 yes, 0 no)  
+e) tweet ratio (tweets per day posted by user profile)  
+f) account age  
+g) is verified (1 yes, 0 no)  
+h) number of retweets  
 
 ## More information about the computational-verification framework
 
