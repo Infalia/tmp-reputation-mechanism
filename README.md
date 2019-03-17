@@ -40,24 +40,24 @@ For each pilot site a number of hashtags or keywords are set such as #ParcoDora,
 | :---: | :---:| :---:|
 | #words |  #friends |
 | length of text | #followers |
-| #question marks | follower-friend ratio | a.follower-friend ratio |
-| #exclamation marks | #tweets | b.#tweets |
+| #question marks | follower-friend ratio | **a**.follower-friend ratio |
+| #exclamation marks | #tweets | **b**.#tweets |
 | contains question mark | #media content|
 | contains exclamation mark | has profile image |
 | has ``please'' | has header image |
 | has colon | has a URL |
-| contains happy emoticon | has location| c.has location|
-| contains sad emoticon | has existing location| d.has existing location|
+| contains happy emoticon | has location| **c**.has location|
+| contains sad emoticon | has existing location| **d**.has existing location|
 | #uppercase chars | has bio description |
-| #pos senti words | tweet ratio | e.tweet ratio |
-| #neg senti words | account age | f.account age |
-| #slangs | is verified | g.is verified |
+| #pos senti words | tweet ratio | **e**.tweet ratio |
+| #neg senti words | account age | **f**.account age |
+| #slangs | is verified | **g**.is verified |
 | #nouns | #times listed |
 | contains 1st pers.pron. | in-degree centrality|
 | contains 2nd pers.pron. | harmonic centralit |
 | contains 3rd pers.pron. | alexa country rank |
 | readability | alexa delta rank | 
-| #retweets | alexa popularity | h.alexa popularity |
+| #retweets | alexa popularity |
 | #hashtags | alexa reach rank |
 | has external link |
 | #mentions |
@@ -68,11 +68,22 @@ For each pilot site a number of hashtags or keywords are set such as #ParcoDora,
 | alexa country rank |
 | alexa delta rank |
 | alexa popularity |
-| | | #retweets |
+| | | **h**.#retweets |
 
 The formula to calculate the reputation score for a WeGovNow user is
 
 	(weight * number of WeGovNow OnToMap main events) + (weightA * a + weightB * b + ... + weightX * x)
+
+where:
+
+a) followers/friends ratio
+b) number of tweets
+c) has location (1 yes, 0 no)
+d) has existing location (1 yes, 0 no)
+e) tweet ratio (tweets per day posted by user profile)
+f) account age
+g) is verified (1 yes, 0 no)
+h) number of retweets
 
 ## More information about the computational-verification framework
 
